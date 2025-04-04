@@ -104,7 +104,7 @@ def process_prompt():
     prompt = f"用户输入：{user_text}\n"
     if image_path:
         prompt += f"图片地址：{image_path}\n"
-    prompt += "请根据以上信息生成对应内容，使用html_renderer工具的render_html命令输出**精美的**HTML格式的结果，这些内容将被直接渲染到网页中的结果框里。在html在500px宽度上能渲染良好，包括合适大小的字体，图片。"
+    prompt += "请根据以上信息生成对应内容，使用html_renderer工具的render_html命令输出**精美的**HTML格式的结果，这些内容将被直接渲染到网页中的结果框里。在html上能渲染良好在约屏幕一半宽度上，包括合适大小的字体，图片。"
 
     log_capture(f"生成的prompt: {prompt}")
     print(f"生成的prompt: {prompt}")
